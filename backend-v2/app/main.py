@@ -36,7 +36,7 @@ app = FastAPI(
 # CORS — security-review: restrict origins in production
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=settings.ALLOWED_ORIGINS,
+    allow_origins=settings.allowed_origins_list,
     allow_credentials=True,
     allow_methods=["GET"],  # Read-only API for MVP
     allow_headers=["*"],
