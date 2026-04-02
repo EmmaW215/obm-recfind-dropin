@@ -34,11 +34,14 @@ app = FastAPI(
 )
 
 # CORS — security-review: restrict origins in production
+# allow_origin_regex: Vercel production + preview URLs (*.vercel.app) without listing each in env
+_VERCEL_ORIGIN_RE = r"https://[a-z0-9.\-]+\.vercel\.app"
 app.add_middleware(
     CORSMiddleware,
     allow_origins=settings.allowed_origins_list,
+    allow_origin_regex=_VERCEL_ORIGIN_RE,
     allow_credentials=True,
-    allow_methods=["GET"],  # Read-only API for MVP
+    allow_methods=["GET", "OPTIONS"],  # OPTIONS for preflight; GET read-only MVP
     allow_headers=["*"],
 )
 
