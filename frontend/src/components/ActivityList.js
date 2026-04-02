@@ -1,6 +1,14 @@
 'use client';
 import { CATEGORY_META } from '../lib/api';
 
+const OAKVILLE_BOOKING_URL =
+  'https://townofoakville.perfectmind.com/24974/Clients/BookMe4?widgetId=acf798a6-9321-41b7-aa41-92cbb8c1b485&embed=False&redirectedFromEmbededMode=False';
+
+function openOakvilleBooking() {
+  const w = window.open(OAKVILLE_BOOKING_URL, '_blank');
+  if (w) w.opener = null;
+}
+
 function formatTime(t) {
   if (!t) return '';
   const [h, m] = t.split(':').map(Number);
@@ -17,7 +25,19 @@ function formatDate(d) {
 function ActivityCard({ activity, onFacilityClick }) {
   const meta = CATEGORY_META[activity.category] || { icon: '', label: activity.category, color: '#6B7280' };
   return (
-    <div className="bg-white border border-gray-200 rounded-lg p-3 sm:p-4 hover:border-blue-300 hover:shadow-sm transition-all">
+    <div
+      role="button"
+      tabIndex={0}
+      aria-label="Open Town of Oakville drop-in booking"
+      onClick={openOakvilleBooking}
+      onKeyDown={(e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          openOakvilleBooking();
+        }
+      }}
+      className="bg-white border border-gray-200 rounded-lg p-3 sm:p-4 hover:border-blue-300 hover:shadow-sm transition-all cursor-pointer"
+    >
       <div className="flex items-start justify-between gap-3">
         <div className="flex-1 min-w-0">
           <div className="flex items-center gap-2 mb-1 flex-wrap">
@@ -29,8 +49,14 @@ function ActivityCard({ activity, onFacilityClick }) {
           </div>
           <h3 className="font-semibold text-gray-900 text-sm leading-snug">{activity.name}</h3>
           <div className="mt-1">
-            <button onClick={() => onFacilityClick && onFacilityClick(activity.facility_id)}
-              className="text-xs text-blue-600 hover:text-blue-800 hover:underline text-left">
+            <button
+              type="button"
+              onClick={(e) => {
+                e.stopPropagation();
+                if (onFacilityClick) onFacilityClick(activity.facility_id);
+              }}
+              className="text-xs text-blue-600 hover:text-blue-800 hover:underline text-left"
+            >
               {activity.facility_name || activity.facility_id}
             </button>
             {activity.room && <span className="text-[11px] text-gray-400 ml-1">· {activity.room}</span>}
