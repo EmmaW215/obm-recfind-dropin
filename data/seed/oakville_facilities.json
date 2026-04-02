@@ -1,0 +1,325 @@
+{
+  "_meta": {
+    "product": "RecFindOBM",
+    "version": "1.0.0",
+    "city": "oakville",
+    "source": "Town of Oakville official website + Google Maps geocoding",
+    "last_updated": "2026-04-02",
+    "notes": "GPS coordinates verified against Oakville Community Centers and Libraries.xlsx (SRID 4326 WGS84)."
+  },
+  "facilities": [
+    {
+      "id": "glen_abbey_cc",
+      "name": "Glen Abbey Community Centre",
+      "facility_type": "community_center",
+      "address": "1415 Third Line, Oakville, ON L6M 3G2",
+      "latitude": 43.4355,
+      "longitude": -79.739,
+      "phone": "905-815-5950",
+      "website_url": "https://www.oakville.ca/parks-recreation-culture/facilities-rentals/facility-locations/community-centres/",
+      "amenities": [
+        "pool",
+        "arena_twin_pad",
+        "fitness_centre",
+        "squash_courts",
+        "library",
+        "community_rooms"
+      ],
+      "has_pool": true,
+      "has_arena": true,
+      "has_fitness": true
+    },
+    {
+      "id": "iroquois_ridge_cc",
+      "name": "Iroquois Ridge Community Centre",
+      "facility_type": "community_center",
+      "address": "1051 Glenashton Drive, Oakville, ON L6H 5L1",
+      "latitude": 43.4882,
+      "longitude": -79.7013,
+      "phone": "905-338-4255",
+      "website_url": "https://www.oakville.ca/parks-recreation-culture/facilities-rentals/facility-locations/community-centres/",
+      "amenities": [
+        "pool",
+        "fitness_centre",
+        "library",
+        "older_adults_centre",
+        "community_rooms"
+      ],
+      "has_pool": true,
+      "has_arena": false,
+      "has_fitness": true
+    },
+    {
+      "id": "oakville_trafalgar_cc",
+      "name": "Oakville Trafalgar Community Centre",
+      "facility_type": "community_center",
+      "address": "325 Reynolds Street, Oakville, ON L6J 3L2",
+      "latitude": 43.453,
+      "longitude": -79.6737,
+      "phone": "905-815-6050",
+      "website_url": "https://www.oakville.ca/parks-recreation-culture/facilities-rentals/facility-locations/community-centres/",
+      "amenities": [
+        "pool_lap",
+        "pool_leisure",
+        "fitness_centre",
+        "community_rooms"
+      ],
+      "has_pool": true,
+      "has_arena": false,
+      "has_fitness": true
+    },
+    {
+      "id": "qepccc",
+      "name": "Queen Elizabeth Park Community & Cultural Centre",
+      "facility_type": "community_center",
+      "address": "2302 Bridge Road, Oakville, ON L6L 2G6",
+      "latitude": 43.4053,
+      "longitude": -79.7187,
+      "phone": "905-815-5979",
+      "website_url": "https://www.oakville.ca/parks-recreation-culture/facilities-rentals/facility-locations/community-centres/",
+      "amenities": [
+        "pool",
+        "fitness_centre",
+        "gym_double",
+        "gym_single",
+        "youth_centre",
+        "seniors_centre",
+        "library",
+        "woodworking_shop",
+        "art_studios"
+      ],
+      "has_pool": true,
+      "has_arena": false,
+      "has_fitness": true
+    },
+    {
+      "id": "river_oaks_cc",
+      "name": "River Oaks Community Centre",
+      "facility_type": "community_center",
+      "address": "2400 Sixth Line, Oakville, ON L6H 6W3",
+      "latitude": 43.4708,
+      "longitude": -79.7241,
+      "phone": "905-257-6800",
+      "website_url": "https://www.oakville.ca/parks-recreation-culture/facilities-rentals/facility-locations/community-centres/",
+      "amenities": [
+        "arena_twin_pad",
+        "fitness_centre",
+        "indoor_track",
+        "community_rooms",
+        "older_adults_centre",
+        "massage_therapy"
+      ],
+      "has_pool": false,
+      "has_arena": true,
+      "has_fitness": true
+    },
+    {
+      "id": "trafalgar_park_cc",
+      "name": "Trafalgar Park Community Centre",
+      "facility_type": "community_center",
+      "address": "133 Rebecca Street, Oakville, ON L6K 1J2",
+      "latitude": 43.4394,
+      "longitude": -79.6781,
+      "phone": "905-845-6601",
+      "website_url": "https://www.oakville.ca/parks-recreation-culture/facilities-rentals/facility-locations/community-centres/",
+      "amenities": [
+        "arena",
+        "community_rooms",
+        "outdoor_rink_seasonal"
+      ],
+      "has_pool": false,
+      "has_arena": true,
+      "has_fitness": false,
+      "notes": "Renovations started Jan 2025 — verify current status"
+    },
+    {
+      "id": "sixteen_mile_sc",
+      "name": "Sixteen Mile Sports Complex",
+      "facility_type": "arena",
+      "address": "3070 Neyagawa Boulevard, Oakville, ON L6M 4S1",
+      "latitude": 43.4657,
+      "longitude": -79.7495,
+      "phone": "905-815-5970",
+      "website_url": "https://www.oakville.ca/parks-recreation-culture/facilities-rentals/facility-locations/community-centres/",
+      "amenities": [
+        "arena_quad_pad",
+        "olympic_ice_pad",
+        "community_rooms"
+      ],
+      "has_pool": false,
+      "has_arena": true,
+      "has_fitness": false
+    },
+    {
+      "id": "joshuas_creek_arenas",
+      "name": "Joshua's Creek Arenas",
+      "facility_type": "arena",
+      "address": "1663 North Service Road East, Oakville, ON L6H 7T1",
+      "latitude": 43.4918,
+      "longitude": -79.6762,
+      "phone": "905-815-5990",
+      "website_url": "https://www.oakville.ca/parks-recreation-culture/facilities-rentals/facility-locations/arenas/",
+      "amenities": [
+        "arena_twin_pad",
+        "shooter_pads"
+      ],
+      "has_pool": false,
+      "has_arena": true,
+      "has_fitness": false
+    },
+    {
+      "id": "maple_grove_arena",
+      "name": "Maple Grove Arena",
+      "facility_type": "arena",
+      "address": "2237 Devon Road, Oakville, ON L6J 5M1",
+      "latitude": 43.4851,
+      "longitude": -79.6582,
+      "phone": "905-815-5985",
+      "website_url": "https://www.oakville.ca/parks-recreation-culture/facilities-rentals/facility-locations/arenas/",
+      "amenities": [
+        "arena"
+      ],
+      "has_pool": false,
+      "has_arena": true,
+      "has_fitness": false
+    },
+    {
+      "id": "kinoak_arena",
+      "name": "Kinoak Arena",
+      "facility_type": "arena",
+      "address": "363 Warminster Drive, Oakville, ON L6L 4N1",
+      "latitude": 43.4147,
+      "longitude": -79.7093,
+      "phone": "905-815-5982",
+      "website_url": "https://www.oakville.ca/parks-recreation-culture/facilities-rentals/facility-locations/arenas/",
+      "amenities": [
+        "arena"
+      ],
+      "has_pool": false,
+      "has_arena": true,
+      "has_fitness": false,
+      "notes": "Currently closed — verify status before launch"
+    },
+    {
+      "id": "oakville_central_library",
+      "name": "Oakville Public Library - Central Branch",
+      "facility_type": "library",
+      "address": "120 Navy Street, Oakville, ON L6J 2Z4",
+      "latitude": 43.4439,
+      "longitude": -79.6709,
+      "phone": "905-815-2042",
+      "website_url": "https://www.opl.ca/hours-locations",
+      "amenities": [
+        "library",
+        "meeting_rooms",
+        "makerspace"
+      ],
+      "has_pool": false,
+      "has_arena": false,
+      "has_fitness": false
+    },
+    {
+      "id": "glen_abbey_library",
+      "name": "Oakville Public Library - Glen Abbey Branch",
+      "facility_type": "library",
+      "address": "1415 Third Line, Oakville, ON L6M 3G2",
+      "latitude": 43.4355,
+      "longitude": -79.739,
+      "phone": "905-815-2042",
+      "website_url": "https://www.opl.ca/hours-locations",
+      "amenities": [
+        "library"
+      ],
+      "has_pool": false,
+      "has_arena": false,
+      "has_fitness": false,
+      "notes": "Located inside Glen Abbey Community Centre — shares GPS with glen_abbey_cc"
+    },
+    {
+      "id": "iroquois_ridge_library",
+      "name": "Oakville Public Library - Iroquois Ridge Branch",
+      "facility_type": "library",
+      "address": "1051 Glenashton Drive, Oakville, ON L6H 5L1",
+      "latitude": 43.4882,
+      "longitude": -79.7013,
+      "phone": "905-815-2042",
+      "website_url": "https://www.opl.ca/hours-locations",
+      "amenities": [
+        "library"
+      ],
+      "has_pool": false,
+      "has_arena": false,
+      "has_fitness": false,
+      "notes": "Located inside Iroquois Ridge Community Centre — shares GPS with iroquois_ridge_cc"
+    },
+    {
+      "id": "white_oaks_library",
+      "name": "Oakville Public Library - White Oaks Branch",
+      "facility_type": "library",
+      "address": "1515 Rebecca Street, Oakville, ON L6L 2B5",
+      "latitude": 43.409,
+      "longitude": -79.6218,
+      "phone": "905-815-2042",
+      "website_url": "https://www.opl.ca/hours-locations",
+      "amenities": [
+        "library"
+      ],
+      "has_pool": false,
+      "has_arena": false,
+      "has_fitness": false
+    },
+    {
+      "id": "sir_john_colborne",
+      "name": "Sir John Colborne Recreation Centre for Seniors",
+      "facility_type": "seniors_centre",
+      "address": "1565 Old Lakeshore Road, Oakville, ON L6L 1A3",
+      "latitude": 43.3985,
+      "longitude": -79.7152,
+      "phone": "905-815-5960",
+      "website_url": "https://www.oakville.ca/parks-recreation-culture/facilities-rentals/facility-locations/seniors-centres/",
+      "amenities": [
+        "seniors_programs",
+        "auditorium",
+        "art_rooms",
+        "lounge"
+      ],
+      "has_pool": false,
+      "has_arena": false,
+      "has_fitness": false
+    },
+    {
+      "id": "white_oaks_pool",
+      "name": "White Oaks Pool",
+      "facility_type": "pool",
+      "address": "1070 McCraney St E, Oakville, ON",
+      "latitude": 43.4637,
+      "longitude": -79.7024,
+      "phone": "905-815-5975",
+      "website_url": "https://www.oakville.ca/parks-recreation-culture/facilities-rentals/facility-locations/",
+      "amenities": [
+        "pool"
+      ],
+      "has_pool": true,
+      "has_arena": false,
+      "has_fitness": false
+    },
+    {
+      "id": "oakville_museum",
+      "name": "Oakville Museum",
+      "facility_type": "museum",
+      "address": "8 Navy Street, Oakville, ON L6J 2Y5",
+      "latitude": 43.44193,
+      "longitude": -79.6667,
+      "phone": "905-338-4400",
+      "website_url": "https://www.oakville.ca/parks-recreation-culture/arts-culture/oakville-museum/",
+      "amenities": [
+        "museum",
+        "exhibitions",
+        "guided_tours"
+      ],
+      "has_pool": false,
+      "has_arena": false,
+      "has_fitness": false
+    }
+  ]
+}

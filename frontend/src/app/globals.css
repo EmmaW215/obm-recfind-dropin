@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.leaflet-container {
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  font-family: inherit;
+}
+
+/* Smooth scrollbar */
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #d1d5db; border-radius: 3px; }
+
+/* Map popup */
+.leaflet-popup-content-wrapper {
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+.leaflet-popup-content {
+  margin: 10px 14px;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+/* Facility marker hover */
+.facility-marker div:hover {
+  transform: scale(1.3);
+}
+
+/* Checkbox styling */
+input[type='checkbox'] {
+  accent-color: #2563eb;
+}
+input[type='radio'] {
+  accent-color: #2563eb;
+}
